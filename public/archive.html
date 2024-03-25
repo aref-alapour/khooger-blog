@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>خوگر</title>
+  <link rel="stylesheet" href="./assets/css/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="./assets/css/main.css" />
+</head>
+
+<body>
+  <!-- All Icon Start -->
+  <svg class="hidden">
+    <symbol id="mobileMenu-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor">
+      <path stroke-linecap="round" stroke-linejoin="round"
+            d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+    </symbol>
+    <symbol id="close-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor">
+      <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+    </symbol>
+    <symbol id="arrow-right-circle-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+      <path stroke-linecap="round" stroke-linejoin="round" d="m12.75 15 3-3m0 0-3-3m3 3h-7.5M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+    </symbol>
+    <symbol id="arrow-left-circle-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+      <path stroke-linecap="round" stroke-linejoin="round" d="m11.25 9-3 3m0 0 3 3m-3-3h7.5M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+    </symbol>
+
+  </svg>
+  <!-- All Icon End -->
+  <!-- Header Start -->
+  <header class="shadow bg-indigo-100 sticky top-0 z-20">
+    <div class="container hidden md:block">
+      <div class="flex justify-between items-center h-20">
+        <div class="w-fit">
+          <a href="#"><img src="./assets/images/logo/logo.png" alt="" /></a>
+        </div>
+        <div
+             class="relative flex justify-between items-center px-4 bg-slate-50 flex-1 md:max-w-60 lg:max-w-80 xl:max-w-lg rounded-3xl group">
+          <input
+                 class="flex-1 ml-2 bg-transparent py-2 border-none focus:outline-none text-xs md:text-sm lg:text-base"
+                 type="search"
+                 name="s"
+                 placeholder="جستجو کنید..." />
+          <span
+                class="inline-block w-px h-6 bg-gray-800 absolute animate-type group-focus-within:hidden"></span>
+        </div>
+        <a
+           href="#"
+           class="inline-block py-2 px-4 bg-primary-2 hover:bg-primary-3 text-white rounded-lg transition-all text-xs lg:text-sm xl:text-base">
+          پلتفورم خوگر
+        </a>
+      </div>
+    </div>
+    <div class="bg-indigo-50 hidden md:block">
+      <div class="container">
+        <div class="flex items-center justify-between">
+          <nav>
+            <ul
+                class="flex items-center gap-x-4 xl:gap-x-8 py-4 md:text-xs lg:text-sm xl:text-base">
+              <li>
+                <a
+                   href="#"
+                   class="flex text-zinc-600 menu-btn">
+                  نقد و بررسی
+                </a>
+              </li>
+              <li>
+                <a
+                   href="#"
+                   class="flex text-zinc-600  menu-btn">
+                  راهنمای خرید
+                </a>
+              </li>
+              <li>
+                <a
+                   href="#"
+                   class="flex text-zinc-600 menu-btn">
+                  تور مجازی
+                </a>
+              </li>
+              <li>
+                <a
+                   href="#"
+                   class="text-zinc-600 flex menu-btn">
+                  ایده بگیرید
+                </a>
+              </li>
+              <li>
+                <a
+                   href="#"
+                   class="text-zinc-600 flex menu-btn">
+                  سبک زندگی
+                </a>
+              </li>
+              <li>
+                <a
+                   href="#"
+                   class="text-zinc-600 flex menu-btn">
+                  منابع
+                </a>
+              </li>
+              <li>
+                <a
+                   href="#"
+                   class="text-zinc-600 flex menu-btn">
+                  نمایشگاه‌ها
+                </a>
+              </li>
+              <li>
+                <a
+                   href="#"
+                   class="text-zinc-600 flex menu-btn">
+                  آموزش
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
+    <div class="container py-4 md:hidden">
+      <div class="flex justify-between items-center mb-2">
+        <div id="mobileMenuIcon">
+          <svg class="w-4 h-4 text-zinc-800">
+            <use href="#mobileMenu-icon"></use>
+          </svg>
+        </div>
+        <div class="w-20 xs:w-fit">
+          <a href="#"><img src="./assets/images/logo/logo.png" alt="" /></a>
+        </div>
+        <a
+           href="#"
+           class="inline-block py-2 px-4 bg-primary-2 hover:bg-primary-3 text-white rounded-lg transition-all text-xs lg:text-sm xl:text-base">
+          پلتفورم خوگر
+        </a>
+      </div>
+      <div
+           class="relative flex justify-between items-center px-4 bg-slate-50 flex-1 md:max-w-60 lg:max-w-80 xl:max-w-lg rounded-md group">
+        <input
+               class="flex-1 ml-2 bg-transparent py-2 border-none focus:outline-none text-xs md:text-sm lg:text-base"
+               type="search"
+               name="s"
+               placeholder="جستجو کنید..." />
+        <span
+              class="inline-block w-px h-6 bg-gray-800 absolute animate-type group-focus-within:hidden"></span>
+        <button class="cursor-pointer">
+          <svg class="w-4 h-4 xl:w-5 xl:h-5 animate-scale">
+            <use href="#search-icon"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+  <!-- mobileMenu -->
+  <section
+           id="MobileMenuSection"
+           class="fixed md:hidden top-4 bottom-4 right-4 bg-slate-50 w-72 z-40 py-4 px-8 rounded-lg transition-all duration-500 translate-x-80">
+    <div class="w-20 h-10 mx-auto mb-4">
+      <a href="#"><img src="./assets/images/logo/logo.png" alt="" /></a>
+    </div>
+    <div
+         class="relative flex justify-between items-center px-4 bg-slate-200 flex-1 md:max-w-60 lg:max-w-80 xl:max-w-lg rounded-md group">
+      <input
+             class="flex-1 ml-2 bg-transparent py-2 border-none focus:outline-none text-xs md:text-sm lg:text-base"
+             type="search"
+             name="s"
+             id=""
+             placeholder="جستجو کنید..." />
+      <span
+            class="inline-block w-px h-6 bg-gray-800 absolute animate-type group-focus-within:hidden"></span>
+    </div>
+    <!-- Tabs -->
+    <div
+         class="flex mt-4 justify-center items-center text-sm font-medium gap-x-4">
+      <div class="tabs-title active" data-menu="tab-site">منوی سایت</div>
+      <div class="tabs-title" data-menu="tab-category">دسته بندی‌</div>
+    </div>
+    <div>
+      <div class="tab-content" id="tab-site">
+        <nav>
+          <ul class="flex flex-col items-start gap-y-4 text-xs mt-4">
+            <li>
+              <a
+                 href="#"
+                 class="text-zinc-600 flex gap-x-1 items-center menu-btn">
+                خانه
+              </a>
+            </li>
+            <li>
+              <a
+                 href="#"
+                 class="text-zinc-600 flex gap-x-1 items-center menu-btn">
+                درباره ما
+              </a>
+            </li>
+            <li>
+              <a
+                 href="#"
+                 class="text-zinc-600 flex gap-x-1 items-center menu-btn">
+                تماس با ما
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="tab-content hidden" id="tab-category">
+        <nav>
+          <ul class="flex flex-col items-start gap-y-4 text-xs mt-4">
+            <li>
+              <a
+                 href="#"
+                 class="text-zinc-600 flex gap-x-1 items-center menu-btn">
+                دسته بندی
+              </a>
+            </li>
+            <li>
+              <a
+                 href="#"
+                 class="text-zinc-600 flex gap-x-1 items-center menu-btn">
+                دسته بندی
+              </a>
+            </li>
+            <li>
+              <a
+                 href="#"
+                 class="text-zinc-600 flex gap-x-1 items-center menu-btn">
+                دسته بندی
+              </a>
+            </li>
+            <li>
+              <a
+                 href="#"
+                 class="text-zinc-600 flex gap-x-1 items-center menu-btn">
+                دسته بندی
+              </a>
+            </li>
+            <li>
+              <a
+                 href="#"
+                 class="text-zinc-600 flex gap-x-1 items-center menu-btn">
+                دسته بندی
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </section>
+  <div
+       class="fixed flex md:hidden items-center justify-center left-4 top-4 bg-slate-50 rounded-full w-6 h-6 z-40 transition-all duration-200 -translate-x-10"
+       id="MenuCloseIcon">
+    <svg class="w-5 h-5 text-red-600">
+      <use href="#close-icon"></use>
+    </svg>
+  </div>
+  <!-- Header End -->
+  <!-- AdvBanner Start -->
+  <section class="container my-8">
+    <div class="image">
+      <img src="./assets/images/site/Component 2.png" alt="" class="hidden md:flex">
+      <img src="./assets/images/site/Component 4.png" alt="" class="md:hidden">
+    </div>
+  </section>
+  <!-- AdvBanner End -->
+  <!-- ArticleShowCase Start -->
+  <div class="container my-8">
+    <div class="grid grid-cols-2 md:grid-cols-4 md:h-40 lg:h-60 gap-4">
+      <div class="col-span-2 h-30 md:h-40 lg:h-60 relative rounded-2xl overflow-hidden shadow">
+        <div class="image h-60">
+          <img src="./assets/images/blog/01.webp" alt="" class="w-full h-full object-cover">
+        </div>
+        <span class="absolute top-0 right-0 left-0 bottom-0 bg-white/50 blur-lg"></span>
+        <div
+             class="title absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-zinc-950">
+          <h2 class="text-xs xs:text-sm md:text-xl lg:text-3xl font-bold">عنوان مقاله</h2>
+          <span class="inline-block w-full text-center text-xs xs:text-sm md:text-base lg:text-lg font-semibold">3 روز قبل</span>
+        </div>
+      </div>
+      <div class="h-30 md:h-40 lg:h-60 relative rounded-2xl overflow-hidden shadow">
+        <div class="image h-60">
+          <img src="./assets/images/blog/02.webp" alt="" class="w-full h-full object-cover">
+        </div>
+        <span class="absolute top-0 right-0 left-0 bottom-0 bg-white/50 blur-lg"></span>
+        <div
+             class="title absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-zinc-950">
+          <h2 class="text-xs xs:text-sm md:text-xl lg:text-3xl font-bold">عنوان مقاله</h2>
+          <span class="inline-block w-full text-center text-xs xs:text-sm md:text-base lg:text-lg font-semibold">3 روز قبل</span>
+        </div>
+      </div>
+      <div class="h-30 md:h-40 lg:h-60 relative rounded-2xl overflow-hidden shadow">
+        <div class="image h-60">
+          <img src="./assets/images/blog/03.webp" alt="" class="w-full h-full object-cover">
+        </div>
+        <span class="absolute top-0 right-0 left-0 bottom-0 bg-white/50 blur-lg"></span>
+        <div
+             class="title absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-zinc-950">
+          <h2 class="text-xs xs:text-sm md:text-xl lg:text-3xl font-bold">عنوان مقاله</h2>
+          <span class="inline-block w-full text-center text-xs xs:text-sm md:text-base lg:text-lg font-semibold">3 روز قبل</span>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <!-- ArticleShowCase End -->
+  <!-- LastBlog Start -->
+  <section class="container my-8">
+    <div class="title">
+      <h2 class="font-bold text-sm xs:text-base sm:text-lg md:text-xl lg:text-2xl mb-4">همه مقالات</h2>
+    </div>
+    <div class="flex justify-between flex-col md:flex-row gap-8">
+      <div class="w-full">
+        <div class="grid grid-cols-2 xs:grid-cols-3 gap-4">
+          <div>
+            <div><a href="#"><img src="./assets/images/blog/01.webp" alt="" class="rounded-xl"></a></div>
+            <a href="#" class="text-sm sm:text-base md:text-lg lg:text-xl font-semibold my-2 inline-block">عنوان مقاله</a>
+            <p class="text-sm line-clamp-2 my-2">متن کوتاه درباره مقاله برای نشان دادن خلاصه ای کوتاه و مختصر</p>
+            <a href="#" class="text-primary-3">مشاهده</a>
+          </div>
+          <div>
+            <div><a href="#"><img src="./assets/images/blog/01.webp" alt="" class="rounded-xl"></a></div>
+            <a href="#" class="text-xl font-semibold my-2 inline-block">عنوان مقاله</a>
+            <p class="text-sm line-clamp-2 my-2">متن کوتاه درباره مقاله برای نشان دادن خلاصه ای کوتاه و مختصر</p>
+            <a href="#" class="text-primary-3">مشاهده</a>
+          </div>
+          <div>
+            <div><a href="#"><img src="./assets/images/blog/01.webp" alt="" class="rounded-xl"></a></div>
+            <a href="#" class="text-xl font-semibold my-2 inline-block">عنوان مقاله</a>
+            <p class="text-sm line-clamp-2 my-2">متن کوتاه درباره مقاله برای نشان دادن خلاصه ای کوتاه و مختصر</p>
+            <a href="#" class="text-primary-3">مشاهده</a>
+          </div>
+          <div>
+            <div><a href="#"><img src="./assets/images/blog/01.webp" alt="" class="rounded-xl"></a></div>
+            <a href="#" class="text-xl font-semibold my-2 inline-block">عنوان مقاله</a>
+            <p class="text-sm line-clamp-2 my-2">متن کوتاه درباره مقاله برای نشان دادن خلاصه ای کوتاه و مختصر</p>
+            <a href="#" class="text-primary-3">مشاهده</a>
+          </div>
+          <div>
+            <div><a href="#"><img src="./assets/images/blog/01.webp" alt="" class="rounded-xl"></a></div>
+            <a href="#" class="text-xl font-semibold my-2 inline-block">عنوان مقاله</a>
+            <p class="text-sm line-clamp-2 my-2">متن کوتاه درباره مقاله برای نشان دادن خلاصه ای کوتاه و مختصر</p>
+            <a href="#" class="text-primary-3">مشاهده</a>
+          </div>
+          <div>
+            <div><a href="#"><img src="./assets/images/blog/01.webp" alt="" class="rounded-xl"></a></div>
+            <a href="#" class="text-xl font-semibold my-2 inline-block">عنوان مقاله</a>
+            <p class="text-sm line-clamp-2 my-2">متن کوتاه درباره مقاله برای نشان دادن خلاصه ای کوتاه و مختصر</p>
+            <a href="#" class="text-primary-3">مشاهده</a>
+          </div>
+          <div>
+            <div><a href="#"><img src="./assets/images/blog/01.webp" alt="" class="rounded-xl"></a></div>
+            <a href="#" class="text-xl font-semibold my-2 inline-block">عنوان مقاله</a>
+            <p class="text-sm line-clamp-2 my-2">متن کوتاه درباره مقاله برای نشان دادن خلاصه ای کوتاه و مختصر</p>
+            <a href="#" class="text-primary-3">مشاهده</a>
+          </div>
+          <div>
+            <div><a href="#"><img src="./assets/images/blog/01.webp" alt="" class="rounded-xl"></a></div>
+            <a href="#" class="text-xl font-semibold my-2 inline-block">عنوان مقاله</a>
+            <p class="text-sm line-clamp-2 my-2">متن کوتاه درباره مقاله برای نشان دادن خلاصه ای کوتاه و مختصر</p>
+            <a href="#" class="text-primary-3">مشاهده</a>
+          </div>
+          <div>
+            <div><a href="#"><img src="./assets/images/blog/01.webp" alt="" class="rounded-xl"></a></div>
+            <a href="#" class="text-xl font-semibold my-2 inline-block">عنوان مقاله</a>
+            <p class="text-sm line-clamp-2 my-2">متن کوتاه درباره مقاله برای نشان دادن خلاصه ای کوتاه و مختصر</p>
+            <a href="#" class="text-primary-3">مشاهده</a>
+          </div>
+          <div>
+            <div><a href="#"><img src="./assets/images/blog/01.webp" alt="" class="rounded-xl"></a></div>
+            <a href="#" class="text-xl font-semibold my-2 inline-block">عنوان مقاله</a>
+            <p class="text-sm line-clamp-2 my-2">متن کوتاه درباره مقاله برای نشان دادن خلاصه ای کوتاه و مختصر</p>
+            <a href="#" class="text-primary-3">مشاهده</a>
+          </div>
+          <div>
+            <div><a href="#"><img src="./assets/images/blog/01.webp" alt="" class="rounded-xl"></a></div>
+            <a href="#" class="text-xl font-semibold my-2 inline-block">عنوان مقاله</a>
+            <p class="text-sm line-clamp-2 my-2">متن کوتاه درباره مقاله برای نشان دادن خلاصه ای کوتاه و مختصر</p>
+            <a href="#" class="text-primary-3">مشاهده</a>
+          </div>
+          <div>
+            <div><a href="#"><img src="./assets/images/blog/01.webp" alt="" class="rounded-xl"></a></div>
+            <a href="#" class="text-xl font-semibold my-2 inline-block">عنوان مقاله</a>
+            <p class="text-sm line-clamp-2 my-2">متن کوتاه درباره مقاله برای نشان دادن خلاصه ای کوتاه و مختصر</p>
+            <a href="#" class="text-primary-3">مشاهده</a>
+          </div>
+        </div>
+        <div class="text-center mt-8">
+          <a href="#" class="bg-primary-2 hover:bg-primary-3 px-16 py-2 rounded-lg font-semibold text-white transition-colors">مشاده بیشتر</a>
+        </div>
+      </div>
+      <div class="space-y-4">
+        <div><a href="#"><img src="./assets/images/site/Component%2013.png" alt=""></a></div>
+        <div><a href="#"><img src="./assets/images/site/Component%2013.png" alt=""></a></div>
+        <div class="bg-[#F3F5F8] rounded-md shadow-sm flex flex-col items-center justify-center gap-4 py-8 px-4">
+          <div class="font-semibold">عضویت در خبرنامه</div>
+          <input type="text" name="" placeholder="ایمیل" class="placeholder:text-center px-2 py-1 rounded focus:outline-0">
+          <button type="submit" class="bg-primary-2 hover:bg-primary-3 transition-colors py-1 px-2 rounded text-sm text-white outline-0">عضو شوید</button>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- LastBlog End -->
+  <!-- AdvBanner  Start -->
+
+  <!-- Footer Start -->
+  <footer class="bg-[#F0F5F9] py-8">
+    <section class="container">
+      <div class="grid grid-cols-2 xs:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-8">
+        <div><a href="#" class="w-24 block"><img src="./assets/images/site/Component 12.png" alt=""></a></div>
+        <div>
+          <div class="text-xl font-semibold mb-6">لینک‌های کاربردی</div>
+          <ul class="space-y-2 font-medium">
+            <li><a href="#">نقد و بررسی</a></li>
+            <li><a href="">راهنمای خرید</a></li>
+            <li><a href="">تور مجازی</a></li>
+            <li><a href="">ایده بگیرید</a></li>
+            <li><a href="">سبک زندگی</a></li>
+          </ul>
+        </div>
+        <div>
+          <div class="text-xl font-semibold mb-6">پلتفرم خوگر</div>
+          <ul class="space-y-2 font-medium">
+            <li><a href="#">خدمات معماری</a></li>
+            <li><a href="">فروشگاه‌ها</a></li>
+            <li><a href="">ایده‌های معماری</a></li>
+            <li><a href="">خوگر پرو</a></li>
+            <li><a href="">درباره خوگر</a></li>
+          </ul>
+        </div>
+        <div>
+          <div class="text-xl font-semibold mb-6">پلتفرم خوگر</div>
+          <ul class="space-y-2 font-medium">
+            <li><a href="#">نقد و بررسی</a></li>
+            <li><a href="">راهنمای خرید</a></li>
+            <li><a href="">تور مجازی</a></li>
+          </ul>
+        </div>
+        <div>
+          <div class="text-xl font-semibold mb-6">پلتفرم خوگر</div>
+        </div>
+      </div>
+    </section>
+  </footer>
+  <div class="bg-[#E0E7EC] text-center py-2 text-sm font-medium">تمامی حقوق وبسایت متعلق به خوگر میباشد</div>
+  <!-- Footer End -->
+
+
+  <div
+          id="overlay"
+          class="bg-black/20 fixed top-0 right-0 left-0 bottom-0 z-30 hidden transition-all scale-0">
+  </div>
+</body>
+<script src="./assets/js/swiper-bundle.min.js"></script>
+<script src="./assets/js/sweetalert2@11.js"></script>
+<script src="./assets/js/main.js"></script>
+
+</html>

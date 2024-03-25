@@ -1,0 +1,161 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  @font-face {
+    font-family: "IranSans";
+    font-style: normal;
+    font-weight: 100;
+    src: local("Iran sans thin"),
+      url("../fonts/iran-sans/IRANSansXFaNum-Thin.woff2") format("woff2");
+    font-display: swap;
+  }
+  @font-face {
+    font-family: "IranSans";
+    font-style: normal;
+    font-weight: 200;
+    src: local("Iran sans ultra light"),
+      url("../fonts/iran-sans/IRANSansXFaNum-UltraLight.woff2") format("woff2");
+    font-display: swap;
+  }
+  @font-face {
+    font-family: "IranSans";
+    font-style: normal;
+    font-weight: 300;
+    src: local("Iran sans light"),
+      url("../fonts/iran-sans/IRANSansXFaNum-Light.woff2") format("woff2");
+    font-display: swap;
+  }
+  @font-face {
+    font-family: "IranSans";
+    font-style: normal;
+    font-weight: 400;
+    src: local("Iran sans regular"),
+      url("../fonts/iran-sans/IRANSansXFaNum-Regular.woff2") format("woff2");
+    font-display: swap;
+  }
+  @font-face {
+    font-family: "IranSans";
+    font-style: normal;
+    font-weight: 500;
+    src: local("Iran sans medium"),
+      url("../fonts/iran-sans/IRANSansXFaNum-Medium.woff2") format("woff2");
+    font-display: swap;
+  }
+  @font-face {
+    font-family: "IranSans";
+    font-style: normal;
+    font-weight: 600;
+    src: local("Iran sans demi bold"),
+      url("../fonts/iran-sans/IRANSansXFaNum-DemiBold.woff2") format("woff2");
+    font-display: swap;
+  }
+  @font-face {
+    font-family: "IranSans";
+    font-style: normal;
+    font-weight: 700;
+    src: local("Iran sans bold"),
+      url("../fonts/iran-sans/IRANSansXFaNum-Bold.woff2") format("woff2");
+    font-display: swap;
+  }
+  @font-face {
+    font-family: "IranSans";
+    font-style: normal;
+    font-weight: 800;
+    src: local("Iran sans extra bold"),
+      url("../fonts/iran-sans/IRANSansXFaNum-ExtraBold.woff2") format("woff2");
+    font-display: swap;
+  }
+  @font-face {
+    font-family: "IranSans";
+    font-style: normal;
+    font-weight: 900;
+    src: local("Iran sans black"),
+      url("../fonts/iran-sans/IRANSansXFaNum-Black.woff2") format("woff2");
+    font-display: swap;
+  }
+  body {
+    @apply font-IranSans;
+  }
+  img {
+    @apply w-full h-auto;
+  }
+}
+
+@layer components {
+  .animate-type {
+    animation: type 0.5s infinite alternate linear;
+  }
+  @keyframes type {
+    0% {
+      opacity: 1;
+      visibility: visible;
+    }
+    100% {
+      opacity: 0;
+      visibility: hidden;
+    }
+  }
+  .animate-scale {
+    animation: scale 0.5s alternate infinite linear;
+  }
+  @keyframes scale {
+    0% {
+      opacity: 1;
+      transform: scale(1.1);
+    }
+    100% {
+      opacity: 0.9;
+      transform: scale(1);
+    }
+  }
+  .menu-btn {
+    @apply relative;
+    transition: 0.5s color linear;
+  }
+  .menu-btn::after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 1px;
+    background: #649DFF;
+    bottom: 0;
+    transform-origin: left;
+    transition: 0.4s transform linear;
+    transform: scale(0);
+  }
+  .menu-btn:hover {
+    color: #649DFF;
+  }
+  .menu-btn:hover::after {
+    transform: scale(1);
+    transform-origin: right;
+  }
+.tabs-title.active {
+  @apply text-primary-2 border-b border-b-primary-2;
+}
+.teacher_section_slider_prev {
+  @apply w-8 h-8 bg-slate-100 rounded-full flex items-center justify-center !right-0 after:text-base after:text-slate-600 after:font-semibold;
+}
+
+.teacher_section_slider_next {
+  @apply w-8 h-8 bg-slate-100 rounded-full flex items-center justify-center !left-0 after:text-base after:text-slate-600 after:font-semibold;
+}
+  .swiper-comment .swiper-slide {
+    transform: scale(.6);
+    transition: .5s ease-in-out all;
+  }
+  .swiper-comment .swiper-slide.swiper-slide-prev {
+    transform: scale(0.8);
+  }
+  .swiper-comment .swiper-slide.swiper-slide-next {
+    transform: scale(0.8);
+  }
+  .swiper-comment .swiper-slide.swiper-slide-active {
+    transform: scale(1);
+  }
+.aref {
+  text-align: center;
+}
+}

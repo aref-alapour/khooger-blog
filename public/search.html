@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>خوگر</title>
+  <link rel="stylesheet" href="./assets/css/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="./assets/css/main.css" />
+</head>
+
+<body>
+  <!-- All Icon Start -->
+  <svg class="hidden">
+    <symbol id="mobileMenu-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor">
+      <path stroke-linecap="round" stroke-linejoin="round"
+            d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+    </symbol>
+    <symbol id="close-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor">
+      <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+    </symbol>
+    <symbol id="arrow-right-circle-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+      <path stroke-linecap="round" stroke-linejoin="round" d="m12.75 15 3-3m0 0-3-3m3 3h-7.5M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+    </symbol>
+    <symbol id="arrow-left-circle-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+      <path stroke-linecap="round" stroke-linejoin="round" d="m11.25 9-3 3m0 0 3 3m-3-3h7.5M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+    </symbol>
+
+  </svg>
+  <!-- All Icon End -->
+  <!-- Header Start -->
+  <header class="shadow bg-indigo-100 sticky top-0 z-20">
+    <div class="container hidden md:block">
+      <div class="flex justify-between items-center h-20">
+        <div class="w-fit">
+          <a href="#"><img src="./assets/images/logo/logo.png" alt="" /></a>
+        </div>
+        <div
+             class="relative flex justify-between items-center px-4 bg-slate-50 flex-1 md:max-w-60 lg:max-w-80 xl:max-w-lg rounded-3xl group">
+          <input
+                 class="flex-1 ml-2 bg-transparent py-2 border-none focus:outline-none text-xs md:text-sm lg:text-base"
+                 type="search"
+                 name="s"
+                 placeholder="جستجو کنید..." />
+          <span
+                class="inline-block w-px h-6 bg-gray-800 absolute animate-type group-focus-within:hidden"></span>
+        </div>
+        <a
+           href="#"
+           class="inline-block py-2 px-4 bg-primary-2 hover:bg-primary-3 text-white rounded-lg transition-all text-xs lg:text-sm xl:text-base">
+          پلتفورم خوگر
+        </a>
+      </div>
+    </div>
+    <div class="bg-indigo-50 hidden md:block">
+      <div class="container">
+        <div class="flex items-center justify-between">
+          <nav>
+            <ul
+                class="flex items-center gap-x-4 xl:gap-x-8 py-4 md:text-xs lg:text-sm xl:text-base">
+              <li>
+                <a
+                   href="#"
+                   class="flex text-zinc-600 menu-btn">
+                  نقد و بررسی
+                </a>
+              </li>
+              <li>
+                <a
+                   href="#"
+                   class="flex text-zinc-600  menu-btn">
+                  راهنمای خرید
+                </a>
+              </li>
+              <li>
+                <a
+                   href="#"
+                   class="flex text-zinc-600 menu-btn">
+                  تور مجازی
+                </a>
+              </li>
+              <li>
+                <a
+                   href="#"
+                   class="text-zinc-600 flex menu-btn">
+                  ایده بگیرید
+                </a>
+              </li>
+              <li>
+                <a
+                   href="#"
+                   class="text-zinc-600 flex menu-btn">
+                  سبک زندگی
+                </a>
+              </li>
+              <li>
+                <a
+                   href="#"
+                   class="text-zinc-600 flex menu-btn">
+                  منابع
+                </a>
+              </li>
+              <li>
+                <a
+                   href="#"
+                   class="text-zinc-600 flex menu-btn">
+                  نمایشگاه‌ها
+                </a>
+              </li>
+              <li>
+                <a
+                   href="#"
+                   class="text-zinc-600 flex menu-btn">
+                  آموزش
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
+    <div class="container py-4 md:hidden">
+      <div class="flex justify-between items-center mb-2">
+        <div id="mobileMenuIcon">
+          <svg class="w-4 h-4 text-zinc-800">
+            <use href="#mobileMenu-icon"></use>
+          </svg>
+        </div>
+        <div class="w-20 xs:w-fit">
+          <a href="#"><img src="./assets/images/logo/logo.png" alt="" /></a>
+        </div>
+        <a
+           href="#"
+           class="inline-block py-2 px-4 bg-primary-2 hover:bg-primary-3 text-white rounded-lg transition-all text-xs lg:text-sm xl:text-base">
+          پلتفورم خوگر
+        </a>
+      </div>
+      <div
+           class="relative flex justify-between items-center px-4 bg-slate-50 flex-1 md:max-w-60 lg:max-w-80 xl:max-w-lg rounded-md group">
+        <input
+               class="flex-1 ml-2 bg-transparent py-2 border-none focus:outline-none text-xs md:text-sm lg:text-base"
+               type="search"
+               name="s"
+               placeholder="جستجو کنید..." />
+        <span
+              class="inline-block w-px h-6 bg-gray-800 absolute animate-type group-focus-within:hidden"></span>
+        <button class="cursor-pointer">
+          <svg class="w-4 h-4 xl:w-5 xl:h-5 animate-scale">
+            <use href="#search-icon"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+  <!-- mobileMenu -->
+  <section
+           id="MobileMenuSection"
+           class="fixed md:hidden top-4 bottom-4 right-4 bg-slate-50 w-72 z-40 py-4 px-8 rounded-lg transition-all duration-500 translate-x-80">
+    <div class="w-20 h-10 mx-auto mb-4">
+      <a href="#"><img src="./assets/images/logo/logo.png" alt="" /></a>
+    </div>
+    <div
+         class="relative flex justify-between items-center px-4 bg-slate-200 flex-1 md:max-w-60 lg:max-w-80 xl:max-w-lg rounded-md group">
+      <input
+             class="flex-1 ml-2 bg-transparent py-2 border-none focus:outline-none text-xs md:text-sm lg:text-base"
+             type="search"
+             name="s"
+             id=""
+             placeholder="جستجو کنید..." />
+      <span
+            class="inline-block w-px h-6 bg-gray-800 absolute animate-type group-focus-within:hidden"></span>
+    </div>
+    <!-- Tabs -->
+    <div
+         class="flex mt-4 justify-center items-center text-sm font-medium gap-x-4">
+      <div class="tabs-title active" data-menu="tab-site">منوی سایت</div>
+      <div class="tabs-title" data-menu="tab-category">دسته بندی‌</div>
+    </div>
+    <div>
+      <div class="tab-content" id="tab-site">
+        <nav>
+          <ul class="flex flex-col items-start gap-y-4 text-xs mt-4">
+            <li>
+              <a
+                 href="#"
+                 class="text-zinc-600 flex gap-x-1 items-center menu-btn">
+                خانه
+              </a>
+            </li>
+            <li>
+              <a
+                 href="#"
+                 class="text-zinc-600 flex gap-x-1 items-center menu-btn">
+                درباره ما
+              </a>
+            </li>
+            <li>
+              <a
+                 href="#"
+                 class="text-zinc-600 flex gap-x-1 items-center menu-btn">
+                تماس با ما
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="tab-content hidden" id="tab-category">
+        <nav>
+          <ul class="flex flex-col items-start gap-y-4 text-xs mt-4">
+            <li>
+              <a
+                 href="#"
+                 class="text-zinc-600 flex gap-x-1 items-center menu-btn">
+                دسته بندی
+              </a>
+            </li>
+            <li>
+              <a
+                 href="#"
+                 class="text-zinc-600 flex gap-x-1 items-center menu-btn">
+                دسته بندی
+              </a>
+            </li>
+            <li>
+              <a
+                 href="#"
+                 class="text-zinc-600 flex gap-x-1 items-center menu-btn">
+                دسته بندی
+              </a>
+            </li>
+            <li>
+              <a
+                 href="#"
+                 class="text-zinc-600 flex gap-x-1 items-center menu-btn">
+                دسته بندی
+              </a>
+            </li>
+            <li>
+              <a
+                 href="#"
+                 class="text-zinc-600 flex gap-x-1 items-center menu-btn">
+                دسته بندی
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </section>
+  <div
+       class="fixed flex md:hidden items-center justify-center left-4 top-4 bg-slate-50 rounded-full w-6 h-6 z-40 transition-all duration-200 -translate-x-10"
+       id="MenuCloseIcon">
+    <svg class="w-5 h-5 text-red-600">
+      <use href="#close-icon"></use>
+    </svg>
+  </div>
+  <!-- Header End -->
+
+  <!-- LastBlog Start -->
+  <section class="container my-8">
+    <div class="mb-8 text-sm xs:text-base md:text-lg lg:text-xl font-semibold">نتایج جستجوی شما...</div>
+    <div class="flex justify-between flex-col md:flex-row gap-8">
+      <div class="w-full">
+        <div class="grid grid-cols-2 xs:grid-cols-3 gap-4">
+          <div>
+            <div><a href="#"><img src="./assets/images/blog/01.webp" alt="" class="rounded-xl"></a></div>
+            <a href="#" class="text-sm sm:text-base md:text-lg lg:text-xl font-semibold my-2 inline-block">عنوان مقاله</a>
+            <p class="text-sm line-clamp-2 my-2">متن کوتاه درباره مقاله برای نشان دادن خلاصه ای کوتاه و مختصر</p>
+            <a href="#" class="text-primary-3">مشاهده</a>
+          </div>
+          <div>
+            <div><a href="#"><img src="./assets/images/blog/01.webp" alt="" class="rounded-xl"></a></div>
+            <a href="#" class="text-xl font-semibold my-2 inline-block">عنوان مقاله</a>
+            <p class="text-sm line-clamp-2 my-2">متن کوتاه درباره مقاله برای نشان دادن خلاصه ای کوتاه و مختصر</p>
+            <a href="#" class="text-primary-3">مشاهده</a>
+          </div>
+          <div>
+            <div><a href="#"><img src="./assets/images/blog/01.webp" alt="" class="rounded-xl"></a></div>
+            <a href="#" class="text-xl font-semibold my-2 inline-block">عنوان مقاله</a>
+            <p class="text-sm line-clamp-2 my-2">متن کوتاه درباره مقاله برای نشان دادن خلاصه ای کوتاه و مختصر</p>
+            <a href="#" class="text-primary-3">مشاهده</a>
+          </div>
+          <div>
+            <div><a href="#"><img src="./assets/images/blog/01.webp" alt="" class="rounded-xl"></a></div>
+            <a href="#" class="text-xl font-semibold my-2 inline-block">عنوان مقاله</a>
+            <p class="text-sm line-clamp-2 my-2">متن کوتاه درباره مقاله برای نشان دادن خلاصه ای کوتاه و مختصر</p>
+            <a href="#" class="text-primary-3">مشاهده</a>
+          </div>
+          <div>
+            <div><a href="#"><img src="./assets/images/blog/01.webp" alt="" class="rounded-xl"></a></div>
+            <a href="#" class="text-xl font-semibold my-2 inline-block">عنوان مقاله</a>
+            <p class="text-sm line-clamp-2 my-2">متن کوتاه درباره مقاله برای نشان دادن خلاصه ای کوتاه و مختصر</p>
+            <a href="#" class="text-primary-3">مشاهده</a>
+          </div>
+          <div>
+            <div><a href="#"><img src="./assets/images/blog/01.webp" alt="" class="rounded-xl"></a></div>
+            <a href="#" class="text-xl font-semibold my-2 inline-block">عنوان مقاله</a>
+            <p class="text-sm line-clamp-2 my-2">متن کوتاه درباره مقاله برای نشان دادن خلاصه ای کوتاه و مختصر</p>
+            <a href="#" class="text-primary-3">مشاهده</a>
+          </div>
+          <div>
+            <div><a href="#"><img src="./assets/images/blog/01.webp" alt="" class="rounded-xl"></a></div>
+            <a href="#" class="text-xl font-semibold my-2 inline-block">عنوان مقاله</a>
+            <p class="text-sm line-clamp-2 my-2">متن کوتاه درباره مقاله برای نشان دادن خلاصه ای کوتاه و مختصر</p>
+            <a href="#" class="text-primary-3">مشاهده</a>
+          </div>
+          <div>
+            <div><a href="#"><img src="./assets/images/blog/01.webp" alt="" class="rounded-xl"></a></div>
+            <a href="#" class="text-xl font-semibold my-2 inline-block">عنوان مقاله</a>
+            <p class="text-sm line-clamp-2 my-2">متن کوتاه درباره مقاله برای نشان دادن خلاصه ای کوتاه و مختصر</p>
+            <a href="#" class="text-primary-3">مشاهده</a>
+          </div>
+          <div>
+            <div><a href="#"><img src="./assets/images/blog/01.webp" alt="" class="rounded-xl"></a></div>
+            <a href="#" class="text-xl font-semibold my-2 inline-block">عنوان مقاله</a>
+            <p class="text-sm line-clamp-2 my-2">متن کوتاه درباره مقاله برای نشان دادن خلاصه ای کوتاه و مختصر</p>
+            <a href="#" class="text-primary-3">مشاهده</a>
+          </div>
+          <div>
+            <div><a href="#"><img src="./assets/images/blog/01.webp" alt="" class="rounded-xl"></a></div>
+            <a href="#" class="text-xl font-semibold my-2 inline-block">عنوان مقاله</a>
+            <p class="text-sm line-clamp-2 my-2">متن کوتاه درباره مقاله برای نشان دادن خلاصه ای کوتاه و مختصر</p>
+            <a href="#" class="text-primary-3">مشاهده</a>
+          </div>
+          <div>
+            <div><a href="#"><img src="./assets/images/blog/01.webp" alt="" class="rounded-xl"></a></div>
+            <a href="#" class="text-xl font-semibold my-2 inline-block">عنوان مقاله</a>
+            <p class="text-sm line-clamp-2 my-2">متن کوتاه درباره مقاله برای نشان دادن خلاصه ای کوتاه و مختصر</p>
+            <a href="#" class="text-primary-3">مشاهده</a>
+          </div>
+          <div>
+            <div><a href="#"><img src="./assets/images/blog/01.webp" alt="" class="rounded-xl"></a></div>
+            <a href="#" class="text-xl font-semibold my-2 inline-block">عنوان مقاله</a>
+            <p class="text-sm line-clamp-2 my-2">متن کوتاه درباره مقاله برای نشان دادن خلاصه ای کوتاه و مختصر</p>
+            <a href="#" class="text-primary-3">مشاهده</a>
+          </div>
+        </div>
+      </div>
+      <div class="space-y-4">
+        <div><a href="#"><img src="./assets/images/site/Component%2013.png" alt=""></a></div>
+        <div class="bg-[#F3F5F8] rounded-md shadow-sm py-4 px-2">
+          <div class="text-center text-sm xs:text-base md:text-lg font-semibold mb-8">مقالات پربازدید</div>
+          <div>
+            <ul class="space-y-4">
+              <li class="flex gap-4 items-center"><a href="#" class="inline-block w-14 h-14"><img src="./assets/images/blog/01.webp" alt="" class="w-full h-full object-cover rounded-lg"></a><a href="#" class="inline-block line-clamp-1 text-sm font-medium">عنوان مقاله</a></li>
+              <li class="flex gap-4 items-center"><a href="#" class="inline-block w-14 h-14"><img src="./assets/images/blog/01.webp" alt="" class="w-full h-full object-cover rounded-lg"></a><a href="#" class="inline-block line-clamp-1 text-sm font-medium">عنوان مقاله</a></li>
+              <li class="flex gap-4 items-center"><a href="#" class="inline-block w-14 h-14"><img src="./assets/images/blog/01.webp" alt="" class="w-full h-full object-cover rounded-lg"></a><a href="#" class="inline-block line-clamp-1 text-sm font-medium">عنوان مقاله</a></li>
+              <li class="flex gap-4 items-center"><a href="#" class="inline-block w-14 h-14"><img src="./assets/images/blog/01.webp" alt="" class="w-full h-full object-cover rounded-lg"></a><a href="#" class="inline-block line-clamp-1 text-sm font-medium">عنوان مقاله</a></li>
+              <li class="flex gap-4 items-center"><a href="#" class="inline-block w-14 h-14"><img src="./assets/images/blog/01.webp" alt="" class="w-full h-full object-cover rounded-lg"></a><a href="#" class="inline-block line-clamp-1 text-sm font-medium">عنوان مقاله</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="bg-[#F3F5F8] rounded-md shadow-sm flex flex-col items-center justify-center gap-4 py-8 px-4">
+          <div class="font-semibold">عضویت در خبرنامه</div>
+          <input type="text" name="" placeholder="ایمیل" class="placeholder:text-center px-2 py-1 rounded focus:outline-0">
+          <button type="submit" class="bg-primary-2 hover:bg-primary-3 transition-colors py-1 px-2 rounded text-sm text-white outline-0">عضو شوید</button>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- LastBlog End -->
+  <!-- AdvertiseBanner Start -->
+  <section class="container">
+    <div class="image">
+      <img src="./assets/images/site/Component 2.png" alt="" class="hidden md:flex">
+      <img src="./assets/images/site/Component 4.png" alt="" class="md:hidden">
+    </div>
+  </section>
+  <!-- AdvertiseBanner End -->
+  <!-- KhoogerPlatform Start -->
+  <section class="container my-8">
+    <div class="text-center text-xl font-semibold mb-4">گزینه‌های پلتفرم خوگر</div>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-16 md:mx-14 lg:mx-28">
+      <div>
+        <div class="w-24 h-24 mx-auto mt-4 mb-8"><img src="./assets/images/site/khooger-gozineh.png" alt=""></div>
+        <div class="px-8">
+          <div class="text-center text-xl font-semibold mb-4 line-clamp-1">خدمات و مجریان</div>
+          <p class="text-sm font-medium line-clamp-2 text-center mb-8">
+            متن کوتاه درباره این خدمت خوگر برای نشان دادن خلاصه ای کوتاه و مختصر
+          </p>
+        </div>
+        <a href="#" class="block w-fit bg-sky-400 text-white px-7 py-3 rounded-md mx-auto">مشاهده</a>
+      </div>
+      <div>
+        <div class="w-24 h-24 mx-auto mt-4 mb-8"><img src="./assets/images/site/khooger-gozineh.png" alt=""></div>
+        <div class="px-8">
+          <div class="text-center text-xl font-semibold mb-4 line-clamp-1">خدمات و مجریان</div>
+          <p class="text-sm font-medium line-clamp-2 text-center mb-8">
+            متن کوتاه درباره این خدمت خوگر برای نشان دادن خلاصه ای کوتاه و مختصر
+          </p>
+        </div>
+        <a href="#" class="block w-fit bg-sky-400 text-white px-7 py-3 rounded-md mx-auto">مشاهده</a>
+      </div>
+      <div>
+        <div class="w-24 h-24 mx-auto mt-4 mb-8"><img src="./assets/images/site/khooger-gozineh.png" alt=""></div>
+        <div class="px-8">
+          <div class="text-center text-xl font-semibold mb-4 line-clamp-1">خدمات و مجریان</div>
+          <p class="text-sm font-medium line-clamp-2 text-center mb-8">
+            متن کوتاه درباره این خدمت خوگر برای نشان دادن خلاصه ای کوتاه و مختصر
+          </p>
+        </div>
+        <a href="#" class="block w-fit bg-sky-400 text-white px-7 py-3 rounded-md mx-auto">مشاهده</a>
+      </div>
+    </div>
+    <div class="mt-8 md:mx-14 lg:mx-28 bg-slate-100 p-8 rounded-2xl shadow flex flex-col md:flex-row justify-between items-center">
+      <div class="w-full lg:w-1/3 text-xl font-semibold text-center md:text-right mb-8 md:mb-0">
+        اگر مجری هستید یا فروشنده هستید به خوگر پرو بپیوندید
+      </div>
+      <a href="#" class="font-semibold">ثبت نام در خوگر پرو</a>
+    </div>
+  </section>
+  <!-- KhoogerPlatform End -->
+  <!-- TypeBlogCategory start -->
+  <section class="container my-8">
+    <div class="lg:text-xl text-center font-semibold mb-4">انواع سبک مقالات داخل یک دسته‌بندی خاص</div>
+    <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+      <div class="border border-zinc-400 rounded-md p-8 flex flex-col justify-between gap-8">
+        <div class="flex justify-between items-center">
+          <span class="font-semibold">سبک زندگی</span>
+          <a href="#" class="block bg-sky-500 text-white px-8 py-2 rounded-xl shadow w-fit">مشاهده</a>
+        </div>
+        <div>
+          <ul class="space-y-4 list-disc mr-4">
+            <li>مواردی که در این دسته بندی خواهیم دید</li>
+            <li>مواردی که در این دسته بندی خواهیم دید</li>
+            <li>مواردی که در این دسته بندی خواهیم دید</li>
+          </ul>
+        </div>
+        <div class="w-2/3 mr-auto">
+          <img src="./assets/images/site/cat.png" alt="">
+        </div>
+      </div>
+      <div class="flex flex-col justify-between gap-8">
+        <div class="flex justify-between items-center gap-x-4 border border-zinc-400 rounded-md py-14 px-4">
+          <div class="w-1/3">
+            <img src="./assets/images/site/cat.png" alt="">
+          </div>
+          <div class="space-y-4 w-2/3 text-center">
+            <div class="font-semibold">راهنمای خرید</div>
+            <div class="text-sm font-medium">انواع محصولات معماری</div>
+            <a href="#" class="block bg-sky-500 text-white px-8 py-2 rounded-xl shadow w-fit mx-auto">مشاهده</a>
+          </div>
+        </div>
+        <div class="flex justify-between items-center gap-x-4 border border-zinc-400 rounded-md py-14 px-4">
+          <div class="space-y-4 w-2/3 text-center">
+            <div class="font-semibold">راهنمای خرید</div>
+            <div class="text-sm font-medium">انواع محصولات معماری</div>
+            <a href="#" class="block bg-sky-500 text-white px-8 py-2 rounded-xl shadow w-fit mx-auto">مشاهده</a>
+          </div>
+          <div class="w-1/3">
+            <img src="./assets/images/site/cat.png" alt="">
+          </div>
+        </div>
+      </div>
+      <div class="border border-zinc-400 rounded-md p-8 flex flex-col justify-between gap-8">
+        <div class="w-2/3 ml-auto">
+          <img src="./assets/images/site/cat.png" alt="">
+        </div>
+        <div class="flex justify-between items-center">
+          <span class="font-semibold">سبک زندگی</span>
+        </div>
+        <div>
+          <ul class="space-y-4 list-disc mr-4">
+            <li>مواردی که در این دسته بندی خواهیم دید</li>
+            <li>مواردی که در این دسته بندی خواهیم دید</li>
+            <li>مواردی که در این دسته بندی خواهیم دید</li>
+          </ul>
+        </div>
+        <a href="#" class="block bg-sky-500 text-white px-8 py-2 rounded-xl shadow w-fit">مشاهده</a>
+      </div>
+    </div>
+  </section>
+  <!-- TypeBlogCategory End -->
+  <!-- AdvertiseBanner Start -->
+  <section class="container my-16">
+    <div class="space-y-8">
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+        <div><a href="#"><img src="./assets/images/site/Component%2011.png" alt=""></a></div>
+        <div><a href="#"><img src="./assets/images/site/Component%2011.png" alt=""></a></div>
+        <div><a href="#"><img src="./assets/images/site/Component%2011.png" alt=""></a></div>
+        <div><a href="#"><img src="./assets/images/site/Component%2011.png" alt=""></a></div>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div><a href="#"><img src="./assets/images/site/Component 4.png" alt=""></a></div>
+        <div><a href="#"><img src="./assets/images/site/Component 4.png" alt=""></a></div>
+      </div>
+    </div>
+  </section>
+  <!-- AdvertiseBanner End -->
+  <!-- Footer Start -->
+  <footer class="bg-[#F0F5F9] py-8">
+    <section class="container">
+      <div class="grid grid-cols-2 xs:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-8">
+        <div><a href="#" class="w-24 block"><img src="./assets/images/site/Component 12.png" alt=""></a></div>
+        <div>
+          <div class="text-xl font-semibold mb-6">لینک‌های کاربردی</div>
+          <ul class="space-y-2 font-medium">
+            <li><a href="#">نقد و بررسی</a></li>
+            <li><a href="">راهنمای خرید</a></li>
+            <li><a href="">تور مجازی</a></li>
+            <li><a href="">ایده بگیرید</a></li>
+            <li><a href="">سبک زندگی</a></li>
+          </ul>
+        </div>
+        <div>
+          <div class="text-xl font-semibold mb-6">پلتفرم خوگر</div>
+          <ul class="space-y-2 font-medium">
+            <li><a href="#">خدمات معماری</a></li>
+            <li><a href="">فروشگاه‌ها</a></li>
+            <li><a href="">ایده‌های معماری</a></li>
+            <li><a href="">خوگر پرو</a></li>
+            <li><a href="">درباره خوگر</a></li>
+          </ul>
+        </div>
+        <div>
+          <div class="text-xl font-semibold mb-6">پلتفرم خوگر</div>
+          <ul class="space-y-2 font-medium">
+            <li><a href="#">نقد و بررسی</a></li>
+            <li><a href="">راهنمای خرید</a></li>
+            <li><a href="">تور مجازی</a></li>
+          </ul>
+        </div>
+        <div>
+          <div class="text-xl font-semibold mb-6">پلتفرم خوگر</div>
+        </div>
+      </div>
+    </section>
+  </footer>
+  <div class="bg-[#E0E7EC] text-center py-2 text-sm font-medium">تمامی حقوق وبسایت متعلق به خوگر میباشد</div>
+  <!-- Footer End -->
+
+
+  <div
+          id="overlay"
+          class="bg-black/20 fixed top-0 right-0 left-0 bottom-0 z-30 hidden transition-all scale-0">
+  </div>
+</body>
+<script src="./assets/js/swiper-bundle.min.js"></script>
+<script src="./assets/js/sweetalert2@11.js"></script>
+<script src="./assets/js/main.js"></script>
+
+</html>
